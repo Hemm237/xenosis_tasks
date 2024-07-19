@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/bg15.jpg" type="image/x-icon">
+    
+</head>
+<body>
+<div class="container">
+    <div class="box form-box">
+        <header>Login</header>
+        <form action="profile.html" method="get"> 
+            
+            <div class="field input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="field">
+             <button type="submit" class="btn1"  onclick="saveData()">Login</button>  
+            </div>
+            <div class="links">
+                Don't have account? <a href="register.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+
+    function saveData(){
+        let email,password;
+        email = document.getElementById("email").value;
+        password = document.getElementById("password").value;
+        
+       
+        let user_rec = new Array();
+        user_rec = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")):[]
+        if(user_rec.some((v) => {
+            return v.email==email && v.password==password;
+        })){
+            alert("Login SuccessFully");
+            let curr_user = user_rec.filter((v) => {
+                return v.email==email && v.password==password;
+            })[0]
+
+            localStorage.setItem("email", curr_user.email);
+            window.location.href = "profile.html";
+
+        }
+        else{
+
+            alert("Login Fail");
+        }
+    }
+
+</script>
+
+</body>
+</html>

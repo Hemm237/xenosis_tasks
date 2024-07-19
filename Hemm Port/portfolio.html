@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HemmPort</title>
+    <link rel="shortcut icon" href="Images/mainpic.png" type="image/x-icon">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hemm<span>Port<span style="color:#1434A4">!</span></span></a>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()" class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+         </ul>
+        <ul class="nav-list">
+           <li class="hideOnMobile"><a href="#home" class="active">Home</a></li>
+           <li class="hideOnMobile"><a href="#about">About</a></li>
+           <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+           <li class="hideOnMobile"><a href="#project">Project</a></li>
+           <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+
+        </ul>
+        <li onclick="showSidebar()" class="menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li> 
+       
+
+
+    </header>
+<!----Home Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one" style="font-size:35px;">Hello</span>
+                <span class="two" style="font-size:35px;">I'm</span>
+            </div>
+            <h1>Hem Narendra</h1>
+            <h3>Junior<span style="color:whitesmoke;margin-left: 15px;">Web Developer Intern</span></h3>
+            <p>During my one-month internship as a Junior Web Developer Intern,<br> I immersed myself in diverse projects, honing technical skills and<br>
+                 collaborating effectively with seasoned professionals.</p>
+            <div class="button">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="images/Narendra_B.Tech_2021_Web Developer_CV.pdf"  class="btn2" download="images/Narendra_B.Tech_2021_Web Developer_CV.pdf">Download CV</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/mainpic.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2 style="color:#1434A4;">About<span>Me</span></h2>
+            <h4 style="color:#1434A4;">Junior<span style="margin-left:10px;">Web Developer Intern</span></h4>
+            <p>During my one-month junior web developer internship, I had the invaluable opportunity to immerse myself in the dynamic world of web development  From day one, I was entrusted with real projects and tasked with contributing to the development of websites, which allowed me to gain hands-on experience and put my skills to the test. Collaborating with experienced developers, I dove into coding languages such as HTML, CSS, and JavaScript, refining my understanding of front-end development. </p>
+            <a href="#" class="btn">More About</a>
+        </div>
+    </section>
+
+<!--Skills Section-->
+<section class="skills" id="skills">
+    <div class="main-text">
+        <h2><span style="color:whitesmoke;">My</span>Skills</h2>
+        
+    </div>
+
+    <div class="skills-content">
+        <div class="box">
+            <div class="s-icons">
+                <img src="icons/icons8-html-48.png" alt="Html Icon">
+            </div>
+            <h3>Html</h3>
+            <p>
+               
+
+I'm HTML, the backbone of the World Wide Web, responsible for structuring web pages and their content. As a markup language.</p>
+<p id="skill"> Skill Knowledge:</p>
+<div class="w3-light-grey">
+    <div class="w3-container w3-green w3-center" style="width:70%;color:black;">70%</div>
+  </div>
+                <a href="#" class="read">Read More</a>
+        </div>
+
+        <div class="box">
+            <div class="s-icons">
+                <img src="icons/icons8-css-48.png" alt="Html Icon">
+            </div>
+            <h3>Css</h3>
+            <p>
+               
+                I'm CSS, the stylistic force behind the web, transforming the structure provided by HTML into visually stunning and engaging experiences.</p>
+                <p id="skill"> Skill Knowledge:</p>
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-green w3-center" style="width:75%">75%</div>
+                  </div>
+                <a href="#" class="read">Read More</a>
+        </div>
+
+        <div class="box">
+            <div class="s-icons">
+                <img src="icons/icons8-javascript-48.png" alt="Html Icon">
+            </div>
+            <h3>JavaScript</h3>
+            <p>
+                
+        I'm Java Script, a versatile and robust programming language known for my platform independence , object and extensive libraries.</p>
+        <p id="skill"> Skill Knowledge:</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-green w3-center" style="width:60%">60%</div>
+          </div>
+                <a href="#" class="read">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!--Project Section-->
+  <section class="project" id="project">
+    <div class="main-text">
+        <h2><span style="color:#1434A4;font-size: 35px;">My</span>Projects</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="Images/web.jpg" alt="">
+                <div class="layer">
+                    <h5>E-commerce Project</h5>
+                    <p>In this E-Commerce Project, we aim to blend creativity and functionality seamlessly, crafting a captivating user experience that resonates with our audience's needs and aspirations.</p>
+                    <a href="#" class="btn2">Click Here</a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <img src="Images/web2.jpg" alt="">
+                <div class="layer">
+                    <h5>Portfolio Project</h5>
+                    <p>In this Portolio Project, we aim to blend creativity and functionality seamlessly, crafting a captivating user experience that resonates with our audience's needs and aspirations.</p>
+                    <a href="#" class="btn2">Click Here</a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <img src="Images/web5.jpg" alt="">
+                <div class="layer">
+                    <h5>Counter Project</h5>
+                    <p>In this Counting Application Project, we aim to blend creativity and functionality seamlessly, crafting a captivating user experience that resonates with our audience's needs and aspirations.</p>
+                    <a href="#" class="btn2">Click Here</a>
+                </div>
+
+            </div>
+        </div>
+
+
+  </section>
+
+  <!--Contact Section-->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+        <h2 style="color:whitesmoke">Contact<span>Me!</span></h2>
+        <h4>If You Have Any <span>Project In Your Mind</span></h4>
+        <p>I'm a <span>Junior Web Developer Intern</span> - Creating bold & brave
+           interface design for companies all across the world!
+        </p>
+        <div class="list">
+            <li><a href=""><i class="fa-solid fa-mobile-button"></i> 7386604413</a></li>
+            <li><a href=""> <i class="fa-regular fa-envelope"></i> hemnarendrapattem@gmail.com</a></li>
+            <li><a href="">I Approach <span style="color:#ffa500;">You!</span></a></li>
+
+        </div>
+        </div>
+    
+
+    <div class="contact-form">
+        <form action="">
+            <input type="name" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="" placeholder="Your Mobile Number" required>
+            <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+            <input type="submit" value="Send Message" class="submit" required>
+        </form>
+
+    </div>
+
+
+  </section>
+
+  <!--end section design-->
+  <section class="end">
+    <div class="last-text">
+       <marquee><p>Copyright &copy; 2024  Web Developed By Hem Narendra All Rights Reserved</p></marquee> 
+    </div>
+
+    <div class="top">
+        <a href="#home"></a>
+    </div>
+
+
+  </section>
+
+
+
+   <script type="text/javascript"src="portfolio.js"></script>
+   
+</body>
+</html>

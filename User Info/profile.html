@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Dashboard</title>
+    <link rel="shortcut icon" href="images/bg15.jpg" type="image/x-icon">
+ 
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <p>HemmTech</p>
+        </div>
+
+        <div class="right-links">
+            <a href="register.html">Change Profile</a>
+            <a href="#" onclick="logOut()"><button class="btn">Logout</button></a>
+        </div>
+
+    </div>
+
+    <main>
+        <div class="main-box top">
+            <div class="top">
+                <div class="box">
+                     <p>Hello <span>#JobHolder</span></p>
+                </div>
+
+                <div class="box">
+                    <p>Your Email Is  <span><script>
+                        document.write(localStorage.getItem("email"));
+                     </script></span> 
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="box">
+                    <p>Welcome to <span>#HemmTech</span> Here You Get a Chance of  Technical Expert</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <marquee>Web Developed By <span>Hem Narendra B.Tech</span></marquee>
+
+    <script>
+        function logOut() {
+            localStorage.removeItem("name");
+            localStorage.removeItem("email");
+            window.location.href= "login.html";
+        }
+
+    </script>
+    
+</body>
+</html>

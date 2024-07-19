@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+}
+body{
+    
+    background-image: url(bg2.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:80vh;
+}
+#countlabel {
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: black;
+    box-shadow: 0px 0px 60px white;
+    width:125px;
+    height:80px;
+    padding:10px;
+    margin: 0 auto;
+    border:5px groove white;
+    border-radius: 10px;
+    margin-top:20px;
+
+    
+}
+h1{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    padding:10px;
+    color:whitesmoke;
+    text-shadow: 2px 2px 8px #0000CD;
+}
+marquee{
+    font-size: 25px;
+    color:white;
+    margin-top:10px;
+    text-shadow: 4px 4px 10px #0000CD;
+}
+
+#incbtn {
+    padding:10px;
+    margin:10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border:5px groove #006400;
+    color:white;
+    background-color: black;
+    
+    transition:.5s;
+}
+
+#incbtn:hover{
+    box-shadow: 0px 0px 40px white;
+}
+#decbtn{
+    padding:10px;
+    margin:10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:5px groove #FF4500;
+    color:white;
+    background-color: black;
+    transition:.5s;
+    
+}
+#decbtn:hover{
+    box-shadow: 0px 0px 40px white;
+}
+
+#resetbtn{
+    padding:10px;
+    margin:10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:5px groove #0000CD;
+    color:white;
+    background-color: black;
+    transition:.5s;
+    
+    
+}
+#resetbtn:hover{
+    box-shadow: 0px 0px 40px white;
+}
+
+.count{
+  background-image: url(bg5.jpg);
+   background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+   width:100%;
+   max-width: 650px;
+   height: 330px;
+   margin: 0 auto;
+   margin-top:220px;
+   border-radius: 10px;
+   border:7px double white;
+   padding:10px;
+   box-shadow: 0px 0px 60px black;
+   
+   
+  
+}
+
+.btns {
+    width:100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+@media (max-width:1480px){
+    .btns {
+        width:100%;
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+    #incbtn {
+        padding:5px;
+        margin:5px;
+    }
+    #decbtn {
+        padding:5px;
+        margin:5px;
+    }
+    #resetbtn{
+        padding:5px;
+        margin:5px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .btns {
+        width:100%;
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+    #incbtn {
+        padding:5px;
+        margin:5px;
+    }
+    #decbtn {
+        padding:5px;
+        margin:5px;
+    }
+    #resetbtn{
+        padding:5px;
+        margin:5px;
+    }
+
+}
+
+
+
+
+
+  
+
+

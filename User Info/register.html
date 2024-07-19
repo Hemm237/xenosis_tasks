@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="shortcut icon" href="images/bg15.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+<div class="container">
+    <div class="box form-box">
+        <header>Sign Up</header>
+        <form action="#"> 
+            <div class="field input">
+                <label for="username">UserName</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <div class="field input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off" required>
+            </div>
+
+            <div class="field input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" autocomplete="off" required>
+            </div>
+
+            <div class="field">
+                <button type="submit" class="btn1" onclick="saveData()">Login</button>
+            </div>
+            <div class="links">
+                Already a member - <a href="login.html">Sign In</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function saveData() {
+        let name,email,password;
+        name = document.getElementById("username").value;
+        email = document.getElementById("email").value;
+       password =  document.getElementById("password").value;
+    
+    let user_rec = new Array();
+    user_rec = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+    if(user_rec.some((v) => {
+        return v.email==email;
+
+    })){
+        alert("Duplicate Data");
+    }
+    else{
+        user_rec.push({
+            "username":name,
+            "email":email,
+            "password":password
+        })
+        localStorage.setItem("users",JSON.stringify(user_rec));
+    }
+
+}
+
+</script>
+
+</body>
+</html>
